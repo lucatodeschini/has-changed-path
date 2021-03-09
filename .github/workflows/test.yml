@@ -29,7 +29,7 @@ jobs:
       - uses: ./
         id: has-changed-path
         with:
-          paths: src/ tests/
+          paths: .github/workflows/test_folder/test_file.txt
 
       - if: steps.has-changed-path.outputs.changed == 'true'
         run: echo 'Code in src/ or tests/ has changed!'
