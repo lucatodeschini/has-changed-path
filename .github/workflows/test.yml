@@ -29,7 +29,8 @@ jobs:
       - uses: ./
         id: has-changed-path
         with:
-          paths: .github/workflows/test_folder/test_file.txt
+          paths: |
+          .github/workflows/test_folder/test_file.txt 
           .github/workflows/test_folder/test_file copy.txt
 
       - if: steps.has-changed-path.outputs.changed == 'true'
