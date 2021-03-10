@@ -29,10 +29,7 @@ jobs:
       - uses: ./
         id: has-changed-path
         with:
-          paths: |
-          |
-          .github/workflows/test_folder/test_file.txt 
-          .github/workflows/test_folder/test_file_copy.txt
+          paths: .github/workflows/test_folder/test_file.txt 
 
       - if: steps.has-changed-path.outputs.changed == 'true'
         run: echo 'File .github/workflows/test_folder/test_file.txt is changed'
