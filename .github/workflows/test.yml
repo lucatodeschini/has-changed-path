@@ -30,6 +30,7 @@ jobs:
         id: has-changed-path
         with:
           paths: |
+          |
           .github/workflows/test_folder/test_file.txt 
           .github/workflows/test_folder/test_file_copy.txt
 
